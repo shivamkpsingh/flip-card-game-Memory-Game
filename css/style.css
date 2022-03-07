@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.time {
+  text-align: center;
+  margin: 5px 0px;
+}
+.game__container {
+  height: 100vh;
+}
+.game__container,
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(228, 226, 226);
+  border-radius: 15px 4px 25px 4px;
+}
+.maxtrix__container {
+  /* position: relative; */
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub_container__1 {
+  /* width: 100%; */
+  /* display: flex; */
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 100px 100px 100px; */
+  grid-template-columns:repeat(6,100px) ;
+  grid-template-rows: repeat(4,100px);
+}
+.card {
+  width: 100px;
+  height: 100%;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  
+}
+.eventNuno{
+  pointer-events: none;
+}
+.front,.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+}
+.front > .img1,
+.back > .img1 {
+  object-fit: fill;
+}
+.flipCard {
+  transform: rotateY(180deg);
+}
+.action_container__2 {
+  display: flex;
+  /* height: 50%; */
+  justify-content: space-around;
+  margin: 50px 0px 0px 0px;
+}
+.sub_container__2__right {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  padding: 6px 0px;
+  width: 150px;
+  background-color: brown;
+  border: none;
+  cursor: pointer;
+  margin: 4px;
+}
+.option {
+  border: 1px solid rgb(133, 128, 128);
+  padding: 6px 15px;
+}
+.threeGame,
+.fourGame {
+  margin: 8px 0px 0px 0px;
+}
+.game {
+  margin: 0px 0px 0px 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="game__container">
+      <div class="main__container">
+        <h1 class="time">Time : <span id="coutDown">60</span></h1>
+        <div class="maxtrix__container" id="maxtrix__container">
+          <div class="sub_container__1" id="sub_container__1"></div>
+        </div>
+        <div class="action_container__2">
+          <div class="sub_container__2__left">
+            <div class="sub__selector">
+              <div class="option">
+                <input type="radio" id="2_pic" onclick="game(12)" />
+                <label for="2_pic" class="game">series of 2 pics</label><br />
+              </div>
+              <div class="option threeGame">
+                <input type="radio" id="3_pic" onclick="game(8)" />
+                <label for="3_pic" class="game">series of 3 pics</label><br />
+              </div>
+              <div class="option fourGame">
+                <input type="radio" id="4_pic" onclick="game(6)" />
+                <label for="4_pic" class="game">series of 4 pics</label>  
+              </div>
+            </div>
+          </div>
+          <div class="sub_container__2__right">
+            <button
+              class="button newGame"
+              onclick="newGame()"
+              id="newGame"
+              disabled
+            >
+              NEW GAME
+            </button>
+            <button class="button show" id="show" onclick="show()" disabled>
+              SHOW
+            </button>
+            <button class="button help">HELP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
